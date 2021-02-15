@@ -1,0 +1,24 @@
+#about{
+    h2{
+        font: {
+            size: 4rem;
+            weight: bolder;
+        }
+        color: #2c3e50;
+        margin-top: 60px;
+    }
+    .contentContainer{
+        width:70%;
+        font-size: 20px;
+        color : white;
+        
+    }
+    background-color: #1ABC9C !important;
+}
+
+@media screen and (max-width: 767px)
+{
+    .contentContainer{
+        width : 100% !important;
+    }
+}

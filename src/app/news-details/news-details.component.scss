@@ -1,0 +1,39 @@
+.details{
+    margin: {
+        top: 70px;
+        bottom: 35px;
+    }
+    
+    .star{
+        div{
+            
+            background-color: black;
+        }
+        justify-content: center;
+    }
+    .s-2
+    {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .oneNews{
+        %text-right
+        {
+            text-align: right;
+        }
+        h1{
+            font-size: 1.2rem;
+            @extend %text-right;
+        }
+        .desc{
+            font-size: 1.3rem;
+            @extend %text-right;
+        }
+        .url{
+            @extend %text-right;
+        }
+    }
+}

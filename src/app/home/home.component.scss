@@ -1,0 +1,35 @@
+
+#home{
+    height: 100vh;
+    background-color: #1ABC9C !important;
+    h1{
+        font-size: 4rem;
+        color : #fff;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    .imageContainer{
+        width : 15%;
+        margin: {
+            top: 30px;
+            bottom: 35px;
+        }
+        
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    #home {
+        h1{
+            font-size: 2rem !important;
+        }
+        .imageContainer{
+            width: 40% !important;
+        }
+        margin-bottom: 0px !important;
+        
+    }
+}

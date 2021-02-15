@@ -1,0 +1,136 @@
+<section id="portfolio" class="py-5 d-flex flex-column justify-content-center align-items-center" >
+    <h2 class="font-weight-bolder">PORTFOLIO</h2>
+    <div class="star d-flex align-items-center mb-4">
+        <div class="rounded"></div>
+        <i class="fas fa-star mx-3 fa-2x"></i>
+        <div class="rounded"></div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row ">
+            <div class="col-md-4" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="portContainer mb-4 p-3 w-100">
+                    <div class="port position-relative">
+                        
+                        <h3 class="sr-only">CIRCUS TENT</h3>
+                        <img src="assets/images/cabin.png" alt="" class="img-fluid">
+                        <div class="forAnimate position-absolute w-100 h-100">
+                            <i class="fas fa-plus fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-4" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="portContainer p-3 w-100">
+                    <div class="port position-relative">
+                        
+                        <h3 class="sr-only">TASTY CAKE</h3>
+                        <img src="assets/images/cake.png" alt="" class="img-fluid">
+                        <div class="forAnimate position-absolute  w-100 h-100">
+                            <i class="fas fa-plus fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-4" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="portContainer p-3 w-100">
+                    <div class="port position-relative">
+                        
+                        <h3 class="sr-only">LOG CABIN</h3>
+                        <img src="assets/images/circus.png" alt="" class="img-fluid">
+                        <div class="forAnimate position-absolute  w-100 h-100">
+                            <i class="fas fa-plus fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-4" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="portContainer mb-5 p-3 w-100">
+                    <div class="port position-relative">
+                        <h3 class="sr-only">SUBMARINE</h3>
+                        <img src="assets/images/game.png" alt="" class="img-fluid">
+                        <div class="forAnimate position-absolute  w-100 h-100 ">
+                            <i class="fas fa-plus fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-4" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="portContainer p-3 w-100">
+                    <div class="port position-relative">
+                        <h3 class="sr-only">LOCKED SAFE</h3>
+                        <img src="assets/images/safe.png" alt="" class="img-fluid">
+                        <div class="forAnimate position-absolute  w-100 h-100">
+                            <i class="fas fa-plus fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-4" data-toggle="modal" data-target="#staticBackdrop">
+                <div class="portContainer p-3 w-100">
+                    <div class="port position-relative">
+                        <h3 class="sr-only">CONTROLLER</h3>
+                        <img src="assets/images/submarine.png" alt="" class="img-fluid">
+                        <div class="forAnimate position-absolute  w-100 h-100">
+                            <i class="fas fa-plus fa-3x text-white"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+    
+</section>
+
+      
+      <!-- Modal -->
+ <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="details text-center">
+                    <h2 class="font-weight-bolder text-center">{{header}}</h2>
+                    <div class="star d-flex align-items-center justify-content-center  mb-4">
+                    <div class="rounded bg-dark"></div>
+                    <i class="fas fa-star mx-3 fa-2x"></i>
+                    <div class="rounded bg-dark"></div>
+                    </div>
+                    <img [src]="imgSrc" alt="" class="img-fluid rounded mb-5">
+                    <p class="my-2">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Quo itaque,voluptates maxime soluta eveniet
+                        temporibus aspernatur porro corruptiimpedit facilis tempore perferendis nulla
+                        temporibus aspernatur porro corruptiimpedit facilis tempore perferendis nulla
+                            
+                        </p>
+                    <div class="close text-center w-100 my-4 " data-dismiss="modal">
+                        <span aria-hidden="true" class="btn btn-success">&times; close window</span> 
+                    </div>
+                </div>
+           
+            </div>
+            
+          </div>
+        </div>
+      </div>
+

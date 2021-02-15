@@ -1,0 +1,23 @@
+
+
+<div class="details container py-5">
+    <h1 class="text-center pt-5">Specific News Details</h1>
+    <div class="star d-flex align-items-center mb-4">
+        <div class="rounded"></div>
+        <i class="fas fa-star text-dark fa-2x mx-3"></i>
+        <div class="rounded"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="oneNews text-center">
+                <img [src]="oneNews.urlToImage"  alt="" class="img-fluid d-block mx-auto">
+                <h1 class="h3 mt-3 text-danger" dir="rtl">{{oneNews.title}}</h1>
+                <p dir="rtl" class="s-2 desc">{{oneNews.description}}</p>
+                <p dir="rtl" class="url">
+                    <a href="{{oneNews.url}}">للتأكد من صحة الخبر اضغط هنا</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>

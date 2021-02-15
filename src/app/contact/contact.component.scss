@@ -1,0 +1,106 @@
+$fontSize : 1.5rem;
+@import '../colors';
+
+#contact{
+    h2{
+        font: {
+            weight: bolder;
+            size: 2.5rem;
+            
+        }
+        margin-top: 60px;
+    }
+    .star{
+        font-weight: bolder;
+        color: $mainColor;
+    }
+    textarea{
+        border:none;
+        border: {
+            bottom: 1px solid #75797D;  
+            radius: 0; 
+        }
+        background-color: transparent !important;
+        font-size: $fontSize;
+        textarea::placeholder{
+            font-size: $fontSize;
+        }
+    }
+    input{
+        input::placeholder{
+            font-size: $fontSize;
+        }
+        @extend textarea !optional;
+        
+    }
+    .star {
+        div{background-color:$mainColor; }  
+    }
+    button{
+        background-color: #159A80;
+        color : white !important;
+        padding: 20px 25px;
+        font-size: $fontSize;
+        width: 10rem;
+    }
+    form{
+        p{
+            display: none;
+        }
+    }
+   
+
+}
+
+
+#contact2{
+    p{
+        font-size: 1.35rem;
+    }
+    .text-uppercase
+    {
+        font-size: $fontSize;
+        font-weight: bolder;
+    }
+    i{
+        
+        width:50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        
+        margin: 7px;
+        border-width: 3px !important;
+        font-size:18px ;
+        transition: 0.4s;
+        &:hover{
+            background-color: white !important;
+            color: $mainColor !important;
+        }
+   
+    }
+    background-color: $mainColor !important;
+}
+
+@media screen and (max-width: 767px){
+    .contactWay{
+        p:not(.text-uppercase){
+            font-size: 1.1rem !important;
+        }
+        .text-uppercase{
+            font-size: 1.19rem !important;
+        }
+        
+        
+    }
+    button{
+        padding: 6px 6px !important;
+    }
+}
+
+ 
+ 
+ 
+
+

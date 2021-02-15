@@ -1,0 +1,60 @@
+<section id="contact" class = "mt-5  d-flex flex-column justify-content-center align-items-center py-5">
+    <h2 class="font-weight-bolder mb-3">CONTACT</h2>
+    <div class="star d-flex align-items-center mb-4">
+        <div class="rounded"></div>
+        <i class="fas fa-star mx-3"></i>
+        <div class="rounded"></div>
+    </div>
+
+    <div class="contactForm w-75 container mb-5">
+        <form action="">
+                <p class="pl-4 pb-0 mb-0 text-primary" >name</p>
+                <input  type="text" class="form-control mb-3 p-4 shadow-none" name="name" placeholder="Name">
+                <div *ngIf= "!nameValidation" class="alert alert-danger">please enter valid name</div>
+                <p class="p-4 pb-0 mb-0 text-primary">email</p>
+                <input type="email" class="form-control mb-3 p-4 shadow-none" name="email" placeholder="Email Addresse">
+                <div *ngIf = "!emailValidation" class="alert alert-danger">please enter valid email</div>
+                <p class="p-4 pb-0 mb-0 text-primary">phone</p>
+                <input type="tel" class="form-control mb-3 p-4 shadow-none" name="phone" placeholder="Phone Number">
+                <div *ngIf = "!telephoneValidation" class="alert alert-danger">please enter valid telephone</div>
+                <p class="p-4 pb-0 mb-0 text-primary" >message</p>
+                <textarea name="msg" class="form-control mb-3 p-4 shadow-none" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button type="button" class="btn">Send</button>
+
+        </form>
+    </div>
+
+</section>
+
+<section id="contact2" class="mb-5 p-5 bg-danger text-center text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="contactWay p-4">
+                    <p class="text-uppercase">LOCATION</p>
+                    <p>2215 John Daniel Drive
+                        Clark, MO 65243</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="contactWay p-4">
+                    <p class="text-uppercase">around the web</p>
+                    <div class="icons">
+                        <i class="fab fa-facebook-f rounded-circle border border-white"></i>
+                        <i class="fab fa-twitter rounded-circle border border-white"></i>
+                        <i class="fab fa-linkedin-in rounded-circle border border-white"></i>
+                        <i class="fas fa-globe rounded-circle border border-white"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="contactWay p-4">
+                    <p class="text-uppercase">ABOUT FREELANCER</p>
+                    <p>Freelance is a free to use, MIT licensed Bootstrap theme created by .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

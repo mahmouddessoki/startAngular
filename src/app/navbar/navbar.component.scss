@@ -1,0 +1,87 @@
+@import '../colors';
+$newsDisplay : flex;
+#navbar
+{
+    .navbar
+    {
+        background-color: $mainColor !important;
+        z-index: 5;
+    }
+    .navbar-brand{
+        font: {
+            size: 1.8rem;
+            weight: 700;
+        }
+       
+    }
+    li{
+        a
+        {
+            font: {
+                weight: 700;
+                size: 1.2rem;
+            }
+            color: #fff !important;
+            transition: 0.3s;
+            padding: 15px;
+            cursor: pointer;
+        }
+    }
+    .navigation{
+        a{
+            &:not(.active):hover{
+                
+                color : $navColor !important
+            }
+        }
+    }
+    
+    .options{
+        list-style-type: none;
+        color: black;
+        background-color: whitesmoke;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        position: absolute;
+        cursor: pointer;
+        margin-top: 4.5rem;
+        right: 2rem;
+        padding: 3rem;
+        li{
+            padding: 0.7rem;
+            &:hover{
+                background-color: black !important;
+                color : white !important;
+                
+            }
+            
+            
+        }
+    }
+    .opt{
+        display: flex;
+    }
+    .active{
+        background-color: $navColor !important;
+        border-radius: 5px;
+        
+        
+    }
+    
+}
+
+
+
+@media screen and (max-width : 767px)
+{
+    .navbar-brand{
+        font-size: 1.2rem !important;
+    }
+  
+}
+
+ 
+

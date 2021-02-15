@@ -1,0 +1,41 @@
+@import '../colors';
+#news{
+    margin: {
+        top: 70px;
+        bottom: 35px;
+    }
+    background-color: rgba($mainColor,0.5);
+    .card{
+        height: 100%;
+        
+    }
+    .col-lg-4{
+        margin : {
+        top : 1.5rem;
+        bottom: 1.5rem;;
+        } 
+    }
+    .star{
+        font-weight: bolder;
+        color: $mainColor;
+        div{
+            background-color: $mainColor;
+        }
+    }
+    h1{
+        color :$mainColor !important;
+    }
+    input{
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width :991px )
+{
+    #news{
+        margin: {
+            top: 49px !important;
+            bottom: 35px;
+        }
+    }
+}

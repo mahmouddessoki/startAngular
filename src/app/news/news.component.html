@@ -1,0 +1,52 @@
+
+
+
+
+<div id="news" class="py-5">
+    <h1 class="text-center">Egypt News</h1>
+    <div class="star d-flex align-items-center justify-content-center mb-3">
+        <div class="rounded"></div>
+        <i class="fas fa-star mx-3 fa-2x"></i>
+        <div class="rounded"></div>
+    </div>
+
+
+    
+    <div class="text-center d-flex flex-md-row flex-column justify-content-center container">
+        <input type="text" name="word" class="form-control search1 mb-3" dir="rtl" placeholder="أبحث بكلمة أو جمله">
+        <input type="text" name="field" list="options" class="form-control search2" dir="rtl" placeholder="أبحث في مجال معين">
+        <datalist id="options">
+            <option value="health">
+            <option value="science">
+            <option value="sports">
+            <option value="technology">
+            <option value="general">
+          </datalist>
+
+    </div>
+
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6" *ngFor = "let news of EgNews; let i = index">
+                <div class="card bg-dark text-white shadow-lighter border-0 w-100" *ngIf = "news.description.length > 0">
+                    <img [src]="news.urlToImage" class="card-img-top img-fluid" alt="no image available">
+                    <div class="card-body">
+                      <h5 class="card-title">{{news.source.name}}</h5>
+                      <p class="card-text" dir="auto">{{news.description | cut:20}}....</p>
+                      <a [routerLink] = "['/details',i]" class="btn btn-primary">...أعرف المزيد</a>
+                    </div>
+                  </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
